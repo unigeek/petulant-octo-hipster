@@ -1,14 +1,14 @@
 # Set the base image to nepalez/ruby (Ubuntu 14.01 + Ruby + gems + bundler)
 FROM nepalez/ruby
 
-MAINTAINTER Mark Halloran
+MAINTAINER Mark Halloran
 
 # Install rspec, capybara, poltergeist
 RUN /bin/bash -l -c 'gem install rspec'
 RUN /bin/bash -l -c 'gem install capybara'
 RUN /bin/bash -l -c 'gem install poltergeist'
 
-RUN apt-get -y install bzip2 libfreetype6 libfontconfig
+RUN apt-get -y install bzip2 freetype* fontconfig
 RUN curl -sL https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-1.9.7-linux-x86_64.tar.bz2 | tar xj -C /usr/local/share
 RUN ln -s /usr/local/share/phantomjs-*-linux-x86_64 /usr/local/share/phantomjs
 RUN ln -s /usr/local/share/phantomjs-*-linux-x86_64 /usr/local/bin/phantomjs
