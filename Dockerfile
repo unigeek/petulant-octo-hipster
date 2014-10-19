@@ -17,7 +17,7 @@ RUN ln -s /usr/local/share/phantomjs-*-linux-x86_64 /usr/local/bin/phantomjs
 RUN ln -s /usr/local/share/phantomjs-*-linux-x86_64 /usr/bin/phantomjs
 
 RUN git clone https://github.com/unigeek/petulant-octo-hipster
-RUN cd petulant-octo-hipster
+WORKDIR /petulant-octo-hipster
 
 # Set the default command to execute
 CMD ["bash"] 
