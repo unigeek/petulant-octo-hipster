@@ -18,7 +18,7 @@ From a Docker-enabled platform, such as Ubuntu 14.04, you might do the following
 3. `cd petulant-octo-hipster`
 4. `sudo docker build -t demo .`
 5. `sudo docker run -i -t demo`
-6. `rpec test.rb`
+6. `rspec test.rb`
 
 You now expect to see:
 `1 example, 0 failures`
