@@ -29,6 +29,7 @@ You now expect to see:
 
 
     CONTAINER ID   IMAGE         COMMAND    CREATED         STATUS          PORTS     NAMES
+
     4686d8b1a5cc   demo:latest   bash       8 minutes ago   Up 8 minutes              goofy_sammet1
 
 8. `sudo docker cp 4686d8b1a5cc:/app/petulant-octo-hipster/capture.png ~`
