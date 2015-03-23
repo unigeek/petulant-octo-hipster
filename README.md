@@ -26,8 +26,8 @@ You now expect to see:
 ...and issuing `ls -al` should expose a new screen capture named `capture.png` with a recent timestamp. You can copy this to the host by doing the following..
 
 7. In another terminal / shell, issue `sudo docker ps` which might show something like this..
-`
-   CONTAINER ID   IMAGE         COMMAND    CREATED         STATUS          PORTS     NAMES
-   4686d8b1a5cc   demo:latest   bash       8 minutes ago   Up 8 minutes              goofy_sammet
-`
+
+`   CONTAINER ID   IMAGE         COMMAND    CREATED         STATUS          PORTS     NAMES
+   4686d8b1a5cc   demo:latest   bash       8 minutes ago   Up 8 minutes              goofy_sammet1
+
 8. `sudo docker cp 4686d8b1a5cc:/app/petulant-octo-hipster/capture.png ~`
