@@ -12,6 +12,7 @@ and examine directory for output result.
 
 For example,
 From a Docker-enabled platform, such as Ubuntu 14.04, you might do the following:
+
 1. `cd ~`
 2. `git clone https://github.com/unigeek/petulant-octo-hipster`
 3. `cd petulant-octo-hipster`
