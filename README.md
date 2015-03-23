@@ -27,7 +27,8 @@ You now expect to see:
 
 7. In another terminal / shell, issue `sudo docker ps` which might show something like this..
 
-`   CONTAINER ID   IMAGE         COMMAND    CREATED         STATUS          PORTS     NAMES
+`
+   CONTAINER ID   IMAGE         COMMAND    CREATED         STATUS          PORTS     NAMES
    4686d8b1a5cc   demo:latest   bash       8 minutes ago   Up 8 minutes              goofy_sammet1
-
+`
 8. `sudo docker cp 4686d8b1a5cc:/app/petulant-octo-hipster/capture.png ~`
